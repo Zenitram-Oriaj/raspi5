@@ -125,6 +125,11 @@ board.on("ready", function() {
 		cols: 20
 	});
 
+	board.repl.inject({
+		led: led,
+		pot: pot
+	});
+
 	btn1.on("down", function () {
 		console.log("btn red down");
 		strLn3 = "Button Red Down";
@@ -155,11 +160,6 @@ board.on("ready", function() {
 		println(3,strLn3);
 	});
 
-	board.repl.inject({
-		led: led,
-		pot: pot
-	});
-
 	pot.on("data", function() {
 
 		if(this.value < minVal || this.value > maxVal)
@@ -170,8 +170,8 @@ board.on("ready", function() {
 			if(this.value < 1018) { maxVal = this.value + 5; }
 			else { maxVal = 1023; }
 
-			setLed = (this.value / 4);
-			led.fade( parseInt(setLed), 250 );
+			setLed = Math.ceil(this.value / 4);
+			led.fade(parseInt(setLed,10), 250 );
 			console.log(this.value);
 		}
 	});

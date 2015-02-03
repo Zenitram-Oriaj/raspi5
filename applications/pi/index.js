@@ -5,8 +5,8 @@
 // LCD pin name  RS EN  DB4 DB5 DB6 DB7
 // Arduino pin # 7  8   9   10  11  12
 
-const RS  = 7;
-const EN  = 6;
+const RS = 7;
+const EN = 6;
 const D4 = 5;
 const D5 = 4;
 const D6 = 3;
@@ -111,6 +111,7 @@ board.on("ready", function() {
 	btn3 = new five.Button(13);
 	btn4 = new five.Button(11);
 	btn5 = new five.Button(12);
+
 	led  = new five.Led(10);
 
 	pot = new five.Sensor({
@@ -123,8 +124,6 @@ board.on("ready", function() {
 		rows: 4,
 		cols: 20
 	});
-
-	console.log(lcd);
 
 	btn1.on("down", function () {
 		console.log("btn red down");
@@ -180,8 +179,9 @@ board.on("ready", function() {
 	lcd.on("ready", function() {
 
 		strLn1 = "Technilinx Node.js";
-		strLn2 = "WebServer:" + config.port.toString();
+		strLn2 = "WebServer:";
 		strLn3 = "";
+		strLn4 = "";
 
 		print();
 	});

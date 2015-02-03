@@ -1,0 +1,280 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'gpio',
+1 verbose cli   'rpio' ]
+2 info using npm@2.4.1
+3 info using node@v0.10.35
+4 silly cache add args [ 'gpio', null ]
+5 verbose cache add spec gpio
+6 silly cache add args [ 'rpio', null ]
+7 verbose cache add spec rpio
+8 silly cache add parsed spec { raw: 'gpio',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'gpio',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: '*',
+8 silly cache add   type: 'range' }
+9 verbose addNamed gpio@*
+10 silly addNamed semver.valid null
+11 silly addNamed semver.validRange *
+12 silly addNameRange { name: 'gpio', range: '*', hasData: false }
+13 silly mapToRegistry name gpio
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/gpio
+17 verbose addNameRange registry:https://registry.npmjs.org/gpio not in flight; fetching
+18 silly cache add parsed spec { raw: 'rpio',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'rpio',
+18 silly cache add   rawSpec: '',
+18 silly cache add   spec: '*',
+18 silly cache add   type: 'range' }
+19 verbose addNamed rpio@*
+20 silly addNamed semver.valid null
+21 silly addNamed semver.validRange *
+22 silly addNameRange { name: 'rpio', range: '*', hasData: false }
+23 silly mapToRegistry name rpio
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/rpio
+27 verbose addNameRange registry:https://registry.npmjs.org/rpio not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/gpio
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 19:08:20
+31 verbose request id 9df186730c3ed57a
+32 verbose etag "68VL8YQ89NU4W0ERFP4KU5KNI"
+33 http request GET https://registry.npmjs.org/gpio
+34 verbose request uri https://registry.npmjs.org/rpio
+35 verbose request no auth needed
+36 info attempt registry request try #1 at 19:08:20
+37 verbose etag "3THP7DDUE6JA6FUNOQT7C3MRW"
+38 http request GET https://registry.npmjs.org/rpio
+39 http 304 https://registry.npmjs.org/rpio
+40 silly get cb [ 304,
+40 silly get   { date: 'Tue, 03 Feb 2015 03:08:21 GMT',
+40 silly get     server: 'Apache',
+40 silly get     via: '1.1 varnish',
+40 silly get     'last-modified': 'Tue, 03 Feb 2015 03:08:21 GMT',
+40 silly get     'cache-control': 'max-age=60',
+40 silly get     etag: '"3THP7DDUE6JA6FUNOQT7C3MRW"',
+40 silly get     age: '0',
+40 silly get     'x-served-by': 'cache-lax1422-LAX',
+40 silly get     'x-cache': 'HIT',
+40 silly get     'x-cache-hits': '1',
+40 silly get     'x-timer': 'S1422932901.223591,VS0,VE174',
+40 silly get     vary: 'Accept',
+40 silly get     'content-length': '0',
+40 silly get     'keep-alive': 'timeout=10, max=50',
+40 silly get     connection: 'Keep-Alive' } ]
+41 verbose etag https://registry.npmjs.org/rpio from cache
+42 verbose get saving rpio to /Users/digimenet/.npm/registry.npmjs.org/rpio/.cache.json
+43 silly addNameRange number 2 { name: 'rpio', range: '*', hasData: true }
+44 silly addNameRange versions [ 'rpio',
+44 silly addNameRange   [ '0.0.1', '0.0.2', '0.0.3', '0.0.4', '0.0.5', '0.0.6' ] ]
+45 verbose addNamed rpio@0.0.6
+46 silly addNamed semver.valid 0.0.6
+47 silly addNamed semver.validRange 0.0.6
+48 silly cache afterAdd rpio@0.0.6
+49 verbose afterAdd /Users/digimenet/.npm/rpio/0.0.6/package/package.json not in flight; writing
+50 verbose afterAdd /Users/digimenet/.npm/rpio/0.0.6/package/package.json written
+51 http 304 https://registry.npmjs.org/gpio
+52 silly get cb [ 304,
+52 silly get   { date: 'Tue, 03 Feb 2015 03:08:21 GMT',
+52 silly get     server: 'Apache',
+52 silly get     via: '1.1 varnish',
+52 silly get     'last-modified': 'Tue, 03 Feb 2015 03:08:21 GMT',
+52 silly get     'cache-control': 'max-age=60',
+52 silly get     etag: '"68VL8YQ89NU4W0ERFP4KU5KNI"',
+52 silly get     age: '0',
+52 silly get     'x-served-by': 'cache-lax1422-LAX',
+52 silly get     'x-cache': 'HIT',
+52 silly get     'x-cache-hits': '1',
+52 silly get     'x-timer': 'S1422932901.173810,VS0,VE309',
+52 silly get     vary: 'Accept',
+52 silly get     'content-length': '0',
+52 silly get     'keep-alive': 'timeout=10, max=50',
+52 silly get     connection: 'Keep-Alive' } ]
+53 verbose etag https://registry.npmjs.org/gpio from cache
+54 verbose get saving gpio to /Users/digimenet/.npm/registry.npmjs.org/gpio/.cache.json
+55 silly addNameRange number 2 { name: 'gpio', range: '*', hasData: true }
+56 silly addNameRange versions [ 'gpio',
+56 silly addNameRange   [ '0.1.0',
+56 silly addNameRange     '0.2.0',
+56 silly addNameRange     '0.2.1',
+56 silly addNameRange     '0.2.2',
+56 silly addNameRange     '0.2.3',
+56 silly addNameRange     '0.2.4',
+56 silly addNameRange     '0.2.5',
+56 silly addNameRange     '0.2.6' ] ]
+57 verbose addNamed gpio@0.2.6
+58 silly addNamed semver.valid 0.2.6
+59 silly addNamed semver.validRange 0.2.6
+60 silly cache afterAdd gpio@0.2.6
+61 verbose afterAdd /Users/digimenet/.npm/gpio/0.2.6/package/package.json not in flight; writing
+62 verbose afterAdd /Users/digimenet/.npm/gpio/0.2.6/package/package.json written
+63 silly install resolved [ { name: 'rpio',
+63 silly install resolved     version: '0.0.6',
+63 silly install resolved     description: 'Raspberry Pi GPIO library with fast mmap() access',
+63 silly install resolved     main: './lib/rpio.js',
+63 silly install resolved     scripts:
+63 silly install resolved      { test: 'echo "Error: no test specified" && exit 1',
+63 silly install resolved        install: 'node-gyp rebuild' },
+63 silly install resolved     repository: { type: 'git', url: 'git://github.com/jperkin/node-rpio.git' },
+63 silly install resolved     keywords: [ 'rpi', 'gpio', 'raspberry', 'pi' ],
+63 silly install resolved     author:
+63 silly install resolved      { name: 'Jonathan Perkin',
+63 silly install resolved        email: 'jonathan@perkin.org.uk',
+63 silly install resolved        url: 'http://www.perkin.org.uk' },
+63 silly install resolved     license: 'ISC / GPL',
+63 silly install resolved     gypfile: true,
+63 silly install resolved     _id: 'rpio@0.0.6',
+63 silly install resolved     dist:
+63 silly install resolved      { shasum: '1b9c9d5106f7c5b65955eb4226ded7fb446bf3b2',
+63 silly install resolved        tarball: 'http://registry.npmjs.org/rpio/-/rpio-0.0.6.tgz' },
+63 silly install resolved     _npmVersion: '1.1.69',
+63 silly install resolved     _npmUser: { name: 'jperkin', email: 'jonathan@perkin.org.uk' },
+63 silly install resolved     maintainers: [ [Object] ],
+63 silly install resolved     directories: {},
+63 silly install resolved     _shasum: '1b9c9d5106f7c5b65955eb4226ded7fb446bf3b2',
+63 silly install resolved     _resolved: 'https://registry.npmjs.org/rpio/-/rpio-0.0.6.tgz',
+63 silly install resolved     _from: 'rpio@*',
+63 silly install resolved     bugs: { url: 'https://github.com/jperkin/node-rpio/issues' },
+63 silly install resolved     readme: 'ERROR: No README data found!',
+63 silly install resolved     homepage: 'https://github.com/jperkin/node-rpio' },
+63 silly install resolved   { name: 'gpio',
+63 silly install resolved     version: '0.2.6',
+63 silly install resolved     author:
+63 silly install resolved      { name: 'Dominick Pham',
+63 silly install resolved        email: 'dominick@dph.am',
+63 silly install resolved        url: 'http://dph.am' },
+63 silly install resolved     description: 'Talk to your Raspberry PI\'s general purpose inputs and outputs',
+63 silly install resolved     keywords: [ 'gpio', 'raspberry', 'pi' ],
+63 silly install resolved     main: './lib/gpio.js',
+63 silly install resolved     repository: { type: 'git', url: 'git://github.com/EnotionZ/GpiO.git' },
+63 silly install resolved     devDependencies: { sinon: '*' },
+63 silly install resolved     licenses: [ [Object] ],
+63 silly install resolved     bugs: { url: 'https://github.com/EnotionZ/GpiO/issues' },
+63 silly install resolved     homepage: 'https://github.com/EnotionZ/GpiO',
+63 silly install resolved     _id: 'gpio@0.2.6',
+63 silly install resolved     _shasum: '5ef5940934dd54f1ab36c5b28ff935216569eeac',
+63 silly install resolved     _from: 'gpio@*',
+63 silly install resolved     _npmVersion: '1.4.9',
+63 silly install resolved     _npmUser: { name: 'dph', email: 'dominick@dph.am' },
+63 silly install resolved     maintainers: [ [Object] ],
+63 silly install resolved     dist:
+63 silly install resolved      { shasum: '5ef5940934dd54f1ab36c5b28ff935216569eeac',
+63 silly install resolved        tarball: 'http://registry.npmjs.org/gpio/-/gpio-0.2.6.tgz' },
+63 silly install resolved     directories: {},
+63 silly install resolved     _resolved: 'https://registry.npmjs.org/gpio/-/gpio-0.2.6.tgz',
+63 silly install resolved     readme: 'ERROR: No README data found!' } ]
+64 info install rpio@0.0.6 into /Users/digimenet/Desktop/git/raspi5
+65 info install gpio@0.2.6 into /Users/digimenet/Desktop/git/raspi5
+66 info installOne rpio@0.0.6
+67 verbose installOne of rpio to /Users/digimenet/Desktop/git/raspi5 not in flight; installing
+68 info installOne gpio@0.2.6
+69 verbose installOne of gpio to /Users/digimenet/Desktop/git/raspi5 not in flight; installing
+70 verbose lock using /Users/digimenet/.npm/_locks/rpio-08306134f7fb6f9d.lock for /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+71 verbose lock using /Users/digimenet/.npm/_locks/gpio-3008f4dfcfdc110c.lock for /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+72 silly install write writing rpio 0.0.6 to /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+73 silly cache addNamed cb rpio@0.0.6
+74 verbose unbuild node_modules/rpio
+75 silly install write writing gpio 0.2.6 to /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+76 silly cache addNamed cb gpio@0.2.6
+77 verbose unbuild node_modules/gpio
+78 info preuninstall gpio@0.2.6
+79 verbose gentlyRm vacuuming /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+80 verbose tar unpack /Users/digimenet/.npm/rpio/0.0.6/package.tgz
+81 verbose tar unpacking to /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+82 verbose gentlyRm vacuuming /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+83 info uninstall gpio@0.2.6
+84 silly gunzTarPerm modes [ '755', '644' ]
+85 verbose unbuild rmStuff gpio@0.2.6 from /Users/digimenet/Desktop/git/raspi5/node_modules
+86 info postuninstall gpio@0.2.6
+87 verbose gentlyRm vacuuming /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+88 silly gentlyRm purging /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+89 silly gunzTarPerm extractEntry package.json
+90 silly gunzTarPerm extractEntry README.md
+91 silly gunzTarPerm extractEntry binding.gyp
+92 silly gentlyRm quitting because other entries in /Users/digimenet/Desktop/git/raspi5/node_modules
+93 verbose tar unpack /Users/digimenet/.npm/gpio/0.2.6/package.tgz
+94 verbose tar unpacking to /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+95 verbose gentlyRm vacuuming /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+96 silly gunzTarPerm modes [ '755', '644' ]
+97 silly gunzTarPerm extractEntry lib/rpio.js
+98 silly gunzTarPerm extractEntry src/bcm2835.cc
+99 silly gunzTarPerm extractEntry package.json
+100 silly gunzTarPerm extractEntry .npmignore
+101 silly gunzTarPerm extractEntry README.md
+102 silly gunzTarPerm extractEntry src/bcm2835.h
+103 silly gunzTarPerm extractEntry LICENSE
+104 silly gunzTarPerm extractEntry lib/gpio.js
+105 silly gunzTarPerm extractEntry src/rpio.cc
+106 silly gunzTarPerm extractEntry test/tests.js
+107 info preinstall gpio@0.2.6
+108 silly install resolved []
+109 verbose about to build /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+110 info build /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+111 verbose linkStuff [ false,
+111 verbose linkStuff   false,
+111 verbose linkStuff   false,
+111 verbose linkStuff   '/Users/digimenet/Desktop/git/raspi5/node_modules' ]
+112 info linkStuff gpio@0.2.6
+113 verbose linkBins gpio@0.2.6
+114 verbose linkMans gpio@0.2.6
+115 verbose rebuildBundles gpio@0.2.6
+116 info install gpio@0.2.6
+117 info postinstall gpio@0.2.6
+118 verbose unlock done using /Users/digimenet/.npm/_locks/gpio-3008f4dfcfdc110c.lock for /Users/digimenet/Desktop/git/raspi5/node_modules/gpio
+119 info preinstall rpio@0.0.6
+120 silly install resolved []
+121 verbose about to build /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+122 info build /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+123 verbose linkStuff [ false,
+123 verbose linkStuff   false,
+123 verbose linkStuff   false,
+123 verbose linkStuff   '/Users/digimenet/Desktop/git/raspi5/node_modules' ]
+124 info linkStuff rpio@0.0.6
+125 verbose linkBins rpio@0.0.6
+126 verbose linkMans rpio@0.0.6
+127 verbose rebuildBundles rpio@0.0.6
+128 info install rpio@0.0.6
+129 verbose unsafe-perm in lifecycle false
+130 info rpio@0.0.6 Failed to exec install script
+131 verbose unlock done using /Users/digimenet/.npm/_locks/rpio-08306134f7fb6f9d.lock for /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+132 verbose stack Error: rpio@0.0.6 install: `node-gyp rebuild`
+132 verbose stack Exit status 1
+132 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:213:16)
+132 verbose stack     at EventEmitter.emit (events.js:98:17)
+132 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:14:12)
+132 verbose stack     at ChildProcess.emit (events.js:98:17)
+132 verbose stack     at maybeClose (child_process.js:766:16)
+132 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:833:5)
+133 verbose pkgid rpio@0.0.6
+134 verbose cwd /Users/digimenet/Desktop/git/raspi5
+135 error Darwin 14.1.0
+136 error argv "node" "/usr/local/bin/npm" "install" "--save" "gpio" "rpio"
+137 error node v0.10.35
+138 error npm  v2.4.1
+139 error code ELIFECYCLE
+140 error rpio@0.0.6 install: `node-gyp rebuild`
+140 error Exit status 1
+141 error Failed at the rpio@0.0.6 install script 'node-gyp rebuild'.
+141 error This is most likely a problem with the rpio package,
+141 error not with npm itself.
+141 error Tell the author that this fails on your system:
+141 error     node-gyp rebuild
+141 error You can get their info via:
+141 error     npm owner ls rpio
+141 error There is likely additional logging output above.
+142 verbose exit [ 1, true ]
+143 verbose unbuild node_modules/rpio
+144 info preuninstall rpio@0.0.6
+145 info uninstall rpio@0.0.6
+146 verbose unbuild rmStuff rpio@0.0.6 from /Users/digimenet/Desktop/git/raspi5/node_modules
+147 info postuninstall rpio@0.0.6
+148 verbose gentlyRm vacuuming /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+149 silly gentlyRm purging /Users/digimenet/Desktop/git/raspi5/node_modules/rpio
+150 silly gentlyRm quitting because other entries in /Users/digimenet/Desktop/git/raspi5/node_modules

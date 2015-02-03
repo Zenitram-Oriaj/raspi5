@@ -115,7 +115,7 @@ board.on("ready", function() {
 	led  = new five.Led(10);
 
 	pot = new five.Sensor({
-		pin: "A2",
+		pin: "A0",
 		freq: 250
 	});
 

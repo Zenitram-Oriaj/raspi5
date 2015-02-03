@@ -15,8 +15,7 @@
     "serve-favicon": "~2.2.0",
     "socket.io": "^1.3.2",
 	"johnny-five": "*",
-    "gpio": "*",
-    "rpio": "*"
+    "gpio": "*"
   },
   "description": "Raspberry Pi Node Server Communicating With An Arduino",
   "main": "app.js",

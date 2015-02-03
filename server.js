@@ -3,6 +3,7 @@ var cfg = JSON.parse(fs.readFileSync(__dirname + "/config/config.json"));
 
 var server = require('child_process');
 var http = {};
+var pi = {};
 
 var msg = {
 	type: 'init',
@@ -19,4 +20,15 @@ function HttpService() {
 	http.send(msg);
 }
 
+function PiService() {
+	pi = server.fork(__dirname + "/applications/pi");
+
+	pi.on('exit', function () {});
+
+	pi.on('message', function (msg) {});
+
+	pi.send(msg);
+}
+
 HttpService();
+PiService();
